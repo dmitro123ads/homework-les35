@@ -1,0 +1,63 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "hero"
+        "about"
+        "gallery"
+        "footer";
+    margin: 0;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    text-align: center;
+}
+
+
+header {
+    grid-area: header;
+    background-color: green;
+    padding: 20px;
+}
+
+.hero {
+    grid-area: hero;
+    background-color: aqua;
+    padding: 40px;
+}
+
+.about {
+    grid-area: about;
+    background-color: blue;
+    padding: 30px;
+}
+.gallery {
+    background-color: red;
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+
+.project {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 12px;
+    background-color: orange;
+}
+
+.big {
+    grid-column: span 2;
+}
+
+.gallery_title {
+    grid-column: span 3;
+}
+
+footer {
+    grid-area: footer;
+    background-color: brown;
+    height: 20ch;
+}
+
+
